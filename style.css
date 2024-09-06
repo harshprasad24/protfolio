@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url(./protfolio-1.png);
+    background-attachment: fixed;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.smallbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 18%;
+    background-color: rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+}
+
+.smallbox .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 100%;
+    background: url(./MY_IMAGE.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.smallbox .listing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 462px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.smallbox .listing .inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.smallbox .listing .inside .name {
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.smallbox .listing .inside .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.smallbox .listing .inside .link .b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    color: black;
+    text-decoration: none;
+}
+
+.smallbox .listing .inside .link .b:hover,
+.social a:hover {
+    transition: all;
+    color: rgb(24, 69, 43);
+    text-shadow: 2px 2px 2px #684d4d;
+}
+
+.bigbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 82%;
+    position: relative;
+    left: 135px;
+    flex-direction: column;
+}
+
+.bigbox h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    text-shadow: 2px 2px 2px #684d4d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bigbox h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #684d4d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bigbox h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    text-shadow: 2px 2px 2px #684d4d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: last baseline;
+    height: 100vh;
+    width: 100%;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    width: 900px;
+    margin-left: 275px;
+    flex-direction: column;
+}
+
+.about-me h1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    font-size: 40px;
+    text-shadow: 2px 1px 0px #3f2a2a;
+    margin-left: 50px;
+}
+
+.about-me h2 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.about-me h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    margin: 20px;
+    text-shadow: 2px 2px 2px #684d4d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.my-info {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 100vh;
+    width: 340px;
+    margin-bottom: 30px;
+}
+
+.my-info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.my-info ul li u a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#proficency {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 100vh;
+    width: 100%;
+}
+
+.projects {
+    height: 100%;
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction: column;
+}
+
+.projects .box {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 1250px;
+    flex-direction: column;
+}
+
+.projects .box .upper-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 23%;
+    width: 500px;
+    margin-right: 70px;
+    flex-direction: column;
+    background-color: rgba(60, 56, 56, 0.3);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.projects .box .middle-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 23%;
+    width: 500px;
+    margin-right: 700px;
+    flex-direction: column;
+    background-color: rgba(60, 56, 56, 0.3);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.projects .box .lower-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 23%;
+    width: 500px;
+    margin-right: 70px;
+    flex-direction: column;
+    background-color: rgba(60, 56, 56, 0.3);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.projects .box .lower-box h2 ,
+.projects .box .middle-box h2 ,
+.projects .box .upper-box h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+#what-i-do {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: c enter;
+    flex-direction: column;
+    height: 80vh;
+    width: 1240px;
+    position: absolute;
+    right: 0px;
+}
+
+.skills h3 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #9b7272;
+    margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box-skill {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .right-box,
+.skills .left-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 620px;
+    flex-direction: column;
+}
+
+.skills .box-skill .right-box .Graphic-Design,
+.skills .box-skill .right-box .UI-UX-Design,
+.skills .box-skill .right-box .Business-Analysis,
+.skills .box-skill .left-box .Web-Design,
+.skills .box-skill .left-box .Trading,
+.skills .box-skill .left-box .Marketing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 540px;
+    border-radius: 20px
+}
+
+.skills .box-skill .right-box .Graphic-Design .icon-1,
+.skills .box-skill .right-box .UI-UX-Design .icon-1,
+.skills .box-skill .right-box .Business-Analysis .icon-1,
+.skills .box-skill .left-box .Web-Design .icon-1,
+.skills .box-skill .left-box .Trading .icon-1,
+.skills .box-skill .left-box .Marketing .icon-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.skills .box-skill .right-box .Graphic-Design .icon-2,
+.skills .box-skill .right-box .UI-UX-Design .icon-2,
+.skills .box-skill .right-box .Business-Analysis .icon-2,
+.skills .box-skill .left-box .Web-Design .icon-2,
+.skills .box-skill .left-box .Trading .icon-2,
+.skills .box-skill .left-box .Marketing .icon-2 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 140px;
+    width: 460px;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.skills .box-skill .right-box .Graphic-Design .icon-2 h1,
+.skills .box-skill .right-box .UI-UX-Design .icon-2 h1,
+.skills .box-skill .right-box .Business-Analysis .icon-2 h1,
+.skills .box-skill .left-box .Web-Design .icon-2 h1,
+.skills .box-skill .left-box .Trading .icon-2 h1,
+.skills .box-skill .left-box .Marketing .icon-2 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(164, 238, 238);
+    text-shadow: 2px 2px 2px #000;
+}
+
+.skills .box-skill .right-box .Graphic-Design .icon-2 h3,
+.skills .box-skill .right-box .UI-UX-Design .icon-2 h3,
+.skills .box-skill .right-box .Business-Analysis .icon-2 h3,
+.skills .box-skill .left-box .Web-Design .icon-2 h3,
+.skills .box-skill .left-box .Trading .icon-2 h3,
+.skills .box-skill .left-box .Marketing .icon-2 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#Resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 1240px;
+    position: absolute;
+    right: 0px;
+}
+
+.resume h3 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 50px;
+}
+
+.box-resume {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume .right-box,
+.resume .left-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 620px;
+    flex-direction: column;
+}
+
+.resume .right-box h1,
+.resume .left-box h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #9b7272;
+}
+
+.resume .box-resume .right-box .Graphic-Design,
+.resume .box-resume .right-box .UI-UX-Design,
+.resume .box-resume .right-box .Business-Analysis,
+.resume .box-resume .left-box .Web-Design,
+.resume .box-resume .left-box .Trading,
+.resume .box-resume .left-box .Marketing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 540px;
+    border-radius: 20px
+}
+
+.resume .box-resume .right-box .Graphic-Design .icon-1,
+.resume .box-resume .right-box .UI-UX-Design .icon-1,
+.resume .box-resume .right-box .Business-Analysis .icon-1,
+.resume .box-resume .left-box .Web-Design .icon-1,
+.resume .box-resume .left-box .Trading .icon-1,
+.resume .box-resume .left-box .Marketing .icon-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.resume .box-resume .right-box .Graphic-Design .icon-2,
+.resume .box-resume .right-box .UI-UX-Design .icon-2,
+.resume .box-resume .right-box .Business-Analysis .icon-2,
+.resume .box-resume .left-box .Web-Design .icon-2,
+.resume .box-resume .left-box .Trading .icon-2,
+.resume .box-resume .left-box .Marketing .icon-2 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 160px;
+    width: 480px;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.resume .box-resume .right-box .Graphic-Design .icon-2 h1,
+.resume .box-resume .right-box .UI-UX-Design .icon-2 h1,
+.resume .box-resume .right-box .Business-Analysis .icon-2 h1,
+.resume .box-resume .left-box .Web-Design .icon-2 h1,
+.resume .box-resume .left-box .Trading .icon-2 h1,
+.resume .box-resume .left-box .Marketing .icon-2 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #000;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #85b7ee;
+}
+
+.resume .box-resume .right-box .Graphic-Design .icon-2 h3,
+.resume .box-resume .right-box .UI-UX-Design .icon-2 h3,
+.resume .box-resume .right-box .Business-Analysis .icon-2 h3,
+.resume .box-resume .left-box .Web-Design .icon-2 h3,
+.resume .box-resume .left-box .Trading .icon-2 h3,
+.resume .box-resume .left-box .Marketing .icon-2 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: rgba(29, 24, 24, 0.2);
+    border-radius: 10px;
+    height: 120px;
+    color: #bcdf49;
+}
+
+.resume .box-resume .right-box .Graphic-Design .icon-2 h2,
+.resume .box-resume .right-box .UI-UX-Design .icon-2 h2,
+.resume .box-resume .right-box .Business-Analysis .icon-2 h2,
+.resume .box-resume .left-box .Web-Design .icon-2 h2,
+.resume .box-resume .left-box .Trading .icon-2 h2,
+.resume .box-resume .left-box .Marketing .icon-2 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: rgba(29, 24, 24, 0.2);
+    border-radius: 10px;
+    height: 120px;
+    color: #39c2e1;
+}
+
+#Contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 1240px;
+    position: absolute;
+    right: 0px;
+    margin-left: 10px;
+}
+
+h1 u {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #000;
+    margin-top: 10px;
+    color: dimgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact .leftbox {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 60vh;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.contact .leftbox h2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 60vh;
+    width: 540px;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.contact .leftbox h1 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 60vh;
+    width: 540px;
+    font-size: 20px;
+}
+
+.contact .leftbox .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.contact .leftbox .social a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+}
+
+.contact .leftbox .social a:hover {
+    transition: all;
+    color: rgb(24, 69, 43);
+}
+
+.contact .rightbox {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 60vh;
+    width: 740px;
+    flex-direction: column;
+}
